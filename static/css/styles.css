@@ -92,6 +92,15 @@ footer {
     padding: 1em;
 }
 
+.ads {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #622;
+}
+
 @media (max-width: 800px) {
     header div {
         width: 90%;

@@ -7,6 +7,6 @@ $smarty->assign("post", $post);
 
 $aside_posts = $posts_object->ob_aside_posts();
 $smarty->assign("aside_posts", $aside_posts);
-
+$smarty->assign("id", $id);
 $smarty->display("post/index.html");
 ?>

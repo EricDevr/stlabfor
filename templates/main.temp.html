@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{block "title"}{/block}</title>
     <link rel="stylesheet" href="{$URLBASE}/static/css/styles.css">
+    <link rel="stylesheet" href="{$URLBASE}/static/css/bottom_posts.css">
     {block "css"}{/block}
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="TaINU9K5"></script>
 <header>
 <div>
     <h1><a href="{$URLBASE}/" class="title-page">STLAB</a></h1>
@@ -25,10 +28,12 @@
 </header>
 <section class="content-page">
 {block "body"}{/block}
+{include file="bottom_posts.html"}
 </section>
 <footer>http://stlab.online <a href="#">^</a></footer>
 <script src="{$URLBASE}/static/js/config.js"></script>
 <script src="{$URLBASE}/static/js/scripts.js"></script>
+<script src="{$URLBASE}/static/js/views_count.js"></script>
 {block "js"}{/block}
 </body>
 </html>
