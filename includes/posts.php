@@ -7,7 +7,7 @@ class POSTS {
         $this->conx = $conx;
     }
     public function ob_portada() {
-        $stmt = $this->conx->prepare("SELECT image,title,content,date FROM posts ORDER BY date DESC LIMIT 1");
+        $stmt = $this->conx->prepare("SELECT id,image,title,content,date FROM posts ORDER BY date DESC LIMIT 1");
         $stmt->execute();
         $result = $stmt->get_result();
         $post = $result->fetch_array();
@@ -16,9 +16,19 @@ class POSTS {
             return $post;
         }
     }
+    
+    public function ob_post($id) {
+        $stmt = $this->conx->prepare("SELECT * FROM posts WHERE id=?");
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $post = $result->fetch_array();
+        $post["date"] = ob_tiempo_transcurrido($post["date"]);
+        return $post;
+    }
 
     public function ob_new_posts() {
-        $stmt = $this->conx->prepare("SELECT image,title,date FROM posts ORDER BY date DESC LIMIT 1,10");
+        $stmt = $this->conx->prepare("SELECT id,image,title,date FROM posts ORDER BY date DESC LIMIT 1,10");
         $stmt->execute();
         $result = $stmt->get_result();
         $posts = array();
@@ -29,7 +39,7 @@ class POSTS {
         return $posts;
     }
     public function ob_aside_posts() {
-        $stmt = $this->conx->prepare("SELECT image,title,date FROM posts ORDER BY views DESC LIMIT 10");
+        $stmt = $this->conx->prepare("SELECT id,image,title,date FROM posts ORDER BY views DESC LIMIT 10");
         $stmt->execute();
         $result = $stmt->get_result();
         $posts = array();

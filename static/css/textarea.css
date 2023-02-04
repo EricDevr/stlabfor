@@ -1,0 +1,29 @@
+.bbcode {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    background: #002;
+    border: .1px solid #002;
+}
+.items {
+    position: relative;
+    display: inline-block;
+    padding-block: .5em;
+    padding-inline: 1em;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    
+    border: .1px solid #999;
+    border-radius: 1px;
+}
+
+.form-subir {
+    position: relative;
+    display: block;
+    padding: .5em;
+    margin-block-start: .5em;
+    background: #eef;
+}

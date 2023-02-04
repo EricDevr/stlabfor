@@ -14,6 +14,7 @@ if(empty($image["name"]) or empty($title) or empty($content) or empty($category)
     } else {
         $title = str_replace(" ", "-", $title);
         $content = htmlspecialchars($content);
+        $content = bbcode($content);
         $upload = upload_post($image_name,$title,$content,$category);
         echo $upload;
     }
@@ -45,5 +46,12 @@ function upload_image($title,$image) {
     } else {
         return "errui";
     }
+}
+
+function bbcode($content) {
+    $car = array("[","]","img=","video=","a=");
+    $rem = array("<",">","img src=","video controls src=","a href=");
+    $content = str_replace($car, $rem, $content);
+    return $content;
 }
 ?>

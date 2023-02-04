@@ -1,7 +1,7 @@
 .top {
     position: relative;
     display: grid;
-    width: 60%;
+    width: 100%;
     grid-template-columns: 2fr 1fr;
     background: #fff;
     margin-inline: auto;
@@ -16,7 +16,6 @@
 
 @media (max-width: 800px) {
     .top {
-        width: 100%;
         grid-template-columns: 1fr;
     }
 }
