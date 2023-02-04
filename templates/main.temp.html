@@ -16,6 +16,10 @@
     <div class="menu">
         <a href="{$URLBASE}/">inicio</a>
         <a href="{$URLBASE}/">categorias</a>
+        {if $user != ""}
+        <a href="{$URLBASE}/section/publicar/">nuevo post</a>
+        <a href="{$URLBASE}/logout/">logout</a>
+        {/if}
     </div>
 </div>
 </header>

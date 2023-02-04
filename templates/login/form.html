@@ -1,0 +1,9 @@
+<form method="POST" class="login-form">
+    <h3>Iniciar Sesión</h3>
+    <input type="email" name="email" placeholder="email">
+    <input type="password" name="pass" placeholder="password">
+    <button>login</button>
+    {if $message != ""}
+    <div class="message">{$message}</div>
+    {/if}
+</form>

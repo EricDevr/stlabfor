@@ -1,4 +1,7 @@
 <?php
+if(!isset($_SESSION["user"])) {
+    header("location: $URLBASE");
+}
 require_once("includes/categories.php");
 $cate_object = new CATEGORIES($mysqli);
 

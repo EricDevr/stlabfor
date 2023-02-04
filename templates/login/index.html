@@ -1,0 +1,10 @@
+{extends "main.temp.html"}
+{block name="title"}login{/block}
+{block name="css"}
+<link rel="stylesheet" href="{$URLBASE}/static/css/login_form.css">
+{/block}
+{block name="body"}
+<section class="content-login-form">
+{include file="login/form.html"}
+</section>
+{/block}
