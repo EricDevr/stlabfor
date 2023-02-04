@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 * {
-    font-family: Monospace;
+    font-family: 'Comfortaa', cursive;
     box-sizing: border-box;
 }
 html {
@@ -38,6 +39,13 @@ header div {
     align-items: center;
     background: #111;
     right: 0; bottom: 0%;
+    cursor: pointer;
+}
+.btn-menu:hover {
+    background: #222;
+}
+.btn-menu:active {
+    background: #069;
 }
 .btn-menu img {
     position: relative;
@@ -47,7 +55,7 @@ header div {
 .menu {
     position: absolute;
     display: none;
-    width: 100%;
+    width: 300px;
     top: 100%; right: 0;
     font-size: 0px;
     background: #0009;
@@ -65,11 +73,17 @@ header div {
     color: #fff;
     padding: 1em;
 }
+.menu a:hover {
+    background: #002;
+}
 
 
 
 @media (max-width: 800px) {
     header div {
         width: 90%;
+    }
+    .menu {
+        width: 100%;
     }
 }

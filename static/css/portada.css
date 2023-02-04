@@ -8,7 +8,6 @@
     position: relative;
     display: block;
     width: 100%;
-    text-align: right;
     font-size: 10px;
     color: #222;
     padding: 1em;
@@ -23,6 +22,6 @@
 .portada .img {
     position: relative;
     display: block;
-    width: 100%; height: 200px;
+    width: 100%; height: 400px;
     object-fit: cover;
 }

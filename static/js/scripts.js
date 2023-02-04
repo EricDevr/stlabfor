@@ -1,4 +1,4 @@
-const URLBASE = "http://localhost:8001";
+const URLBASE = "http://localhost/stlabfor";
 {
     function open_menu() {
         const menu = document.getElementsByClassName("menu")[0];

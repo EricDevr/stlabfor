@@ -11,8 +11,10 @@ class POSTS {
         $stmt->execute();
         $result = $stmt->get_result();
         $post = $result->fetch_array();
-        $post["date"] = ob_tiempo_transcurrido($post["date"]);
-        return $post;
+        if($stmt->affected_rows >= 1) {
+            $post["date"] = ob_tiempo_transcurrido($post["date"]);
+            return $post;
+        }
     }
 
     public function ob_new_posts() {

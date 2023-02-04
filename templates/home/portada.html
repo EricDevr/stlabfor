@@ -1,5 +1,7 @@
 <a class="portada" href="">
+{if $portada != ""}
 <span class="date">{$portada.date}</span>
 <h2 class="title-port">{$portada.title|replace:"-":" "}</h2>
 <img class="img" src="{$URLBASE}/static/images/{$portada.image}">
+{/if}
 </a>

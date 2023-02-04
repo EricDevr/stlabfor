@@ -5,7 +5,7 @@ $image = $_FILES["image"];
 $title = $_POST["title"];
 $content = $_POST["content"];
 $category = $_POST["category"];
-if(empty($image["name"]) or empty($title) or empty($content) or empty($tags)) {
+if(empty($image["name"]) or empty($title) or empty($content) or empty($category)) {
     echo "campos vacíos";
 } else {
     $image_name = upload_image($title, $image);
