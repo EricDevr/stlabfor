@@ -1,0 +1,13 @@
+<section class="new-posts-content">
+    <h2 class="title-section">Posts Recientes</h2>
+    <div class="new-posts">
+    {foreach $new_posts as $post}
+    <a href="" class="new-post">
+        <h2 class="title-new-post">
+            <span class="date-new-post">{$post.date}</span>
+            {$post.title|replace:"-":" "}</h2>
+        <img src="{$URLBASE}/static/images/{$post.image}" class="image-new-post">
+    </a>
+    {/foreach}
+    </div>
+</section>

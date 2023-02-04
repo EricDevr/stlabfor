@@ -1,0 +1,14 @@
+<form method="POST" class="form-publicar">
+<input type="file" name="image">
+<input type="text" name="title" placeholder="titulo">
+<div class="bcod">
+    <span></span>
+    <textarea name="content" placeholder="contenido"></textarea>
+</div>
+<select name="category" class="categories">
+    {foreach $categories as $category}
+    <option value="{$category.name}">{$category.name}</option>
+    {/foreach}
+</select>
+<button type="button" onclick="publicar()">publicar</button>
+</form>

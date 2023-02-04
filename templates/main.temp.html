@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{block "title"}{/block}</title>
+    <link rel="stylesheet" href="{$URLBASE}/static/css/styles.css">
+    {block "css"}{/block}
+</head>
+<body>
+<header>
+<div>
+    <h1><a href="{$URLBASE}/" class="title-page">STLAB</a></h1>
+    <div class="btn-menu"><span onclick="open_menu()"><img src="{$URLBASE}/static/images/icon-menu.png" class="image-menu"></span>
+    </div>
+    <div class="menu">
+        <a href="{$URLBASE}/">inicio</a>
+        <a href="{$URLBASE}/">categorias</a>
+    </div>
+</div>
+</header>
+<section class="content-page">
+{block "body"}{/block}
+</section>
+<footer>http://stlab.online <a href="#">^</a></footer>
+<script src="{$URLBASE}/static/js/scripts.js"></script>
+{block "js"}{/block}
+</body>
+</html>

@@ -1,0 +1,13 @@
+<section class="aside-posts-content">
+<h2 class="aside-title-section">Posts Relevantes</h2>
+<div class="aside-posts">
+{foreach $aside_posts as $post}
+<a href="" class="aside-post">
+<img src="{$URLBASE}/static/images/{$post.image}" class="image-aside-post">
+<h3 class="title-aside-post">
+<span class="date-aside-post">{$post.date}</span>
+{$post.title|replace:"-":" "}</h3>
+</a>
+{/foreach}
+</div>
+</section>

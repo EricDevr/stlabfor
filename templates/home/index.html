@@ -1,0 +1,21 @@
+{extends "main.temp.html"}
+{block name="title"}stlab{/block}
+{block name="css"}
+<link rel="stylesheet" href="{$URLBASE}/static/css/home.css">
+<link rel="stylesheet" href="{$URLBASE}/static/css/portada.css">
+<link rel="stylesheet" href="{$URLBASE}/static/css/new_posts.css">
+<link rel="stylesheet" href="{$URLBASE}/static/css/aside_posts.css">
+{/block}
+
+{block name="body"}
+<section class="top">
+<div class="left">
+{include file="home/portada.html"}
+{include file="home/new_posts.html"}
+</div>
+<div class="right">
+{include file="home/aside_posts.html"}
+</div>
+</section>
+<section class="bottom"></section>
+{/block}

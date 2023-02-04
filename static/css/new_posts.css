@@ -1,0 +1,48 @@
+.new-posts-content {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: .1em;
+}
+.title-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-block: 1em;
+}
+
+.new-posts {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+}
+
+.new-post {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    text-decoration: none;
+}
+.date-new-post {
+    position: relative;
+    display: block;
+    font-size: 10px;
+    font-weight: 100;
+    color: #444;
+}
+.title-new-post {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #333;
+    padding: .5em;
+}
+.image-new-post {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
