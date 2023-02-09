@@ -5,7 +5,7 @@
     background: #334;
 }
 
-.noticias,.consolas {
+.sec {
     position: relative;
     display: grid;
     width: 100%;

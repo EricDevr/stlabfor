@@ -18,7 +18,9 @@
     </div>
     <div class="menu">
         <a href="{$URLBASE}/">inicio</a>
-        <a href="{$URLBASE}/">categorias</a>
+        {foreach $CATEGORIES as $category}
+        <a href="{$URLBASE}/category/{$category.name}/">{$category.name}</a>
+        {/foreach}
         {if $user != ""}
         <a href="{$URLBASE}/section/publicar/">nuevo post</a>
         <a href="{$URLBASE}/logout/">logout</a>

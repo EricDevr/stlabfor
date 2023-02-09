@@ -1,4 +1,3 @@
 <?php
-session_start();
-$URLBASE = "http://localhost:8002";
+$URLBASE = "http://localhost/stlabfor";
 ?>

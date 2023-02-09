@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-04 17:23:24
+/* Smarty version 4.3.0, created on 2023-02-09 23:11:50
   from 'C:\xampp\htdocs\stlabfor\templates\home\portada.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63de867ceaf5f0_94006864',
+  'unifunc' => 'content_63e56fa69fa0a1_00903963',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de8da3d99066fb047db894c81626bbbba7d0a028' => 
     array (
       0 => 'C:\\xampp\\htdocs\\stlabfor\\templates\\home\\portada.html',
-      1 => 1675527802,
+      1 => 1675537945,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63de867ceaf5f0_94006864 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63e56fa69fa0a1_00903963 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\stlabfor\\includes\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
-<a class="portada" href="">
+<a class="portada" href="<?php echo $_smarty_tpl->tpl_vars['URLBASE']->value;?>
+/post/<?php echo $_smarty_tpl->tpl_vars['portada']->value['id'];?>
+/<?php echo $_smarty_tpl->tpl_vars['portada']->value['title'];?>
+/">
 <?php if ($_smarty_tpl->tpl_vars['portada']->value != '') {?>
 <span class="date"><?php echo $_smarty_tpl->tpl_vars['portada']->value['date'];?>
 </span>

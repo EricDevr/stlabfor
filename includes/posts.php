@@ -61,6 +61,18 @@ class POSTS {
         }
         return $posts;
     }
+    public function ob_posts_all($category) {
+        $stmt = $this->conx->prepare("SELECT id,image,title,date,category FROM posts WHERE category=? ORDER BY date DESC");
+        $stmt->bind_param("s", $category);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $posts = array();
+        while($post = $result->fetch_array()) {
+            $post["date"] = ob_tiempo_transcurrido($post["date"]);
+            $posts[] = $post;
+        }
+        return $posts;
+    }
 }
 
 function ob_tiempo_transcurrido($post_date) {

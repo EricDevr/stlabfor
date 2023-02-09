@@ -8,6 +8,12 @@ $mysqli = new mysqli($host, $user, $pass, $db_name);
 
 /*
 
+CREATE TABLE users(
+    email VARCHAR(50) UNIQUE,
+    name VARCHAR(50) UNIQUE,
+    password VARCHAR(50)
+);
+
 CREATE TABLE posts(
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 image VARCHAR(100),
