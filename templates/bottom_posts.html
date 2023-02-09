@@ -1,8 +1,8 @@
 <section class="botton-posts">
 <div class="noticias">
-{foreach $noticias as $post}
+{foreach $viral as $post}
 <a href="{$URLBASE}/post/{$post.id}/{$post.title}/" class="post-bp">
-<span class="date-bp">{$post.date}</span>
+<span class="date-bp">{$post.date} {$post.category}</span>
 <h3 class="title-bp">{$post.title|replace:"-":" "|truncate:70}</h3>
 <img class="image-bp" src="{$URLBASE}/static/images/{$post.image}">
 </a>
@@ -10,9 +10,9 @@
 </div>
 <div class="ads">ads</div>
 <div class="consolas">
-{foreach $consolas as $post}
+{foreach $entretenimiento as $post}
 <a href="{$URLBASE}/post/{$post.id}/{$post.title}/" class="post-bp">
-<span class="date-bp">{$post.date}</span>
+<span class="date-bp">{$post.date} {$post.category}</span>
 <h3 class="title-bp">{$post.title|replace:"-":" "|truncate:70}</h3>
 <img class="image-bp" src="{$URLBASE}/static/images/{$post.image}">
 </a>

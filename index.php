@@ -7,10 +7,10 @@ if(isset($_GET["logout"])) {
     header("location: $URLBASE");
 }
 $posts_object = new POSTS($mysqli);
-$noticias = $posts_object->ob_posts_cate("noticias");
-$consolas = $posts_object->ob_posts_cate("consolas");
-$smarty->assign("noticias", $noticias);
-$smarty->assign("consolas", $consolas);
+$viral = $posts_object->ob_posts_cate("Viral");
+$entretenimiento = $posts_object->ob_posts_cate("Entretenimiento");
+$smarty->assign("viral", $viral);
+$smarty->assign("entretenimiento", $entretenimiento);
 
 $section = "home";
 if(isset($_GET["section"])) {

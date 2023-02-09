@@ -10,14 +10,15 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 5px;
+    grid-gap: .5em;
+    padding: 1em;
 }
 .post-bp {
     position: relative;
     display: grid;
+    height: 300px;
     text-decoration: none;
-    grid-template-rows: .4fr 1fr 2fr;
+    grid-template-rows: 10% 25% 65%;
     background: #fff;
 }
 .date-bp {
@@ -49,9 +50,11 @@
         grid-template-columns: 1fr;
     }
     .post-bp {
-        grid-template-rows: .5fr .5fr 2fr;
+        height: 400px;
+        grid-template-rows: 10% 25% 65%;
     }
     .title-bp {
+        justify-content: center;
         padding-inline: 1em;
     }
 }

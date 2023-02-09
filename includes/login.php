@@ -8,7 +8,7 @@ class LOGIN_CLASS {
         if(empty($email) or empty($password)) {
             return "campos vacíos";
         } else {
-            $stmt = $this->conx->prepare("SELECT name FROM users WHERE email=? AND password=PASSWORD(?) LIMIT 1");
+            $stmt = $this->conx->prepare("SELECT name FROM users WHERE email=? AND password=PASSWORD(?)");
             $stmt->bind_param("ss", $email, $password);
             $stmt->execute();
             $result = $stmt->get_result();
