@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-04 18:01:46
+/* Smarty version 4.3.0, created on 2023-02-10 00:34:45
   from '/storage/emulated/0/htdocs/Stlabfor1/templates/publicar/form.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63de8f7a3d78d4_00702894',
+  'unifunc' => 'content_63e58315e9ae97_38179689',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6aad08bdcadc0afa3e47ae152dfd8f0ace19eca6' => 
     array (
       0 => '/storage/emulated/0/htdocs/Stlabfor1/templates/publicar/form.html',
-      1 => 1675530103,
+      1 => 1675985481,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:publicar/textarea.html' => 1,
   ),
 ),false)) {
-function content_63de8f7a3d78d4_00702894 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63e58315e9ae97_38179689 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form method="POST" class="form-publicar">
 <input type="file" name="image">
 <input type="text" name="title" placeholder="titulo">
@@ -29,7 +29,7 @@ function content_63de8f7a3d78d4_00702894 (Smarty_Internal_Template $_smarty_tpl)
 ?>
 <select name="category" class="categories">
     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categories']->value, 'category');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIES']->value, 'category');
 $_smarty_tpl->tpl_vars['category']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['category']->value) {
 $_smarty_tpl->tpl_vars['category']->do_else = false;

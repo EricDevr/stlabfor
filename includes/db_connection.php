@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$user = "root";
-$pass = "";
-$db_name = "stlabfor";
+$user = "stlab";
+$pass = "acoer1cstadb";
+$db_name = "stlab";
 $mysqli = new mysqli($host, $user, $pass, $db_name);
 
 /*

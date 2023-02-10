@@ -31,7 +31,7 @@
 }
 .title-bp {
     position: relative;
-    display: flex;
+    display: block;
     width: 100%;
     align-items: center;
     font-size: 15px;
@@ -46,15 +46,15 @@
 }
 
 @media (max-width: 800px) {
-    .noticias,.consolas {
+    .sec {
         grid-template-columns: 1fr;
     }
     .post-bp {
-        height: 400px;
-        grid-template-rows: 10% 25% 65%;
+        grid-template-rows: 10% 30% 60%;
     }
     .title-bp {
+        font-size: 20px;
         justify-content: center;
-        padding-inline: 1em;
+        text-align: center;
     }
 }

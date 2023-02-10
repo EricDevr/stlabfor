@@ -1,3 +1,3 @@
 <?php
-$URLBASE = "http://localhost/stlabfor";
+$URLBASE = "http://stlab.online";
 ?>

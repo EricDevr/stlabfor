@@ -1,26 +1,27 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-04 22:26:08
+/* Smarty version 4.3.0, created on 2023-02-10 00:31:36
   from '/storage/emulated/0/htdocs/Stlabfor1/templates/aside_posts.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63decd7036b758_74812401',
+  'unifunc' => 'content_63e58258eea672_25541778',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fea8a1486425e2dc0848a5517a8540fb369d1d97' => 
     array (
       0 => '/storage/emulated/0/htdocs/Stlabfor1/templates/aside_posts.html',
-      1 => 1675545965,
+      1 => 1675985481,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:ads.html' => 1,
   ),
 ),false)) {
-function content_63decd7036b758_74812401 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63e58258eea672_25541778 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/storage/emulated/0/htdocs/Stlabfor1/includes/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <section class="aside-posts-content">
@@ -49,6 +50,7 @@ $_smarty_tpl->tpl_vars['post']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
-<div class="ads">ads</div>
+<?php $_smarty_tpl->_subTemplateRender("file:ads.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 </section><?php }
 }
